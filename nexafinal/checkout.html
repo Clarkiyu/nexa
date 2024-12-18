@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="N.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <title>Nexa</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html" class="Nexa">Nexa</a>
+
+        <!-- Search Bar -->
+        <form>
+            <div class="search">
+                <span class="material-symbols-outlined search-icon">search</span>
+                <input class="search-input" type="search" placeholder="Search">
+            </div>
+        </form>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="desktop.html">Desktop</a>
+            <a href="laptop.html">Laptop</a>
+            <a href="camera.html">Camera</a>
+            <a href="cellphone.html">Cellphone</a>
+            <a href="watch.html">Watch</a>
+        </nav>
+
+        <!-- Icons -->
+            <a href="addtocart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+    </header>
+    <div class="features">
+        <!-- Feature 1 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/5637/5637217.png" alt="Free Shipping">
+            <h3>Free Shipping</h3>
+        </div>
+    
+        <!-- Feature 2 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/7491/7491734.png" alt="Easy Returns">
+            <h3>Easy Returns</h3>
+        </div>
+    
+        <!-- Feature 3 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/4575/4575124.png" alt="Secure Payment">
+            <h3>Secure Payment</h3>
+        </div>
+    
+        <!-- Feature 4 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="Special Support">
+    
+            <h3>Special Support</h3>
+        </div>
+    </div>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .checkout-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .order-summary {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .order-summary h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+
+        .order-summary ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .order-summary li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 10px;
+            background-color: #000000;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #000000;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .popup h2 {
+            margin-bottom: 15px;
+        }
+
+        .popup button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #000000;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #000000;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+    <script>
+        function handleCheckout(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const popup = document.getElementById('popup');
+            const overlay = document.getElementById('overlay');
+
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            const overlay = document.getElementById('overlay');
+
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form onsubmit="handleCheckout(event)">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Shipping Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your shipping address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cod">G-Cash</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+            </div>
+            <div id="cart">
+                <h2>Cart Summary</h2>
+                <ul id="cart-items"></ul>
+                <p class="total" id="total-price">Total: ₱0.00</p>
+            </div>
+    <div id="popup" class="popup">
+        <h2>Thank you for your order!</h2>
+        <p>Your order has been successfully placed.</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <div id="overlay" class="overlay" onclick="closePopup()"></div>
+</body>
+</html>
+

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="N.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <title>Nexa</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html" class="Nexa">Nexa</a>
+
+        <!-- Search Bar -->
+        <form>
+            <div class="search">
+                <span class="material-symbols-outlined search-icon">search</span>
+                <input class="search-input" type="search" placeholder="Search">
+            </div>
+        </form>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="desktop.html">Desktop</a>
+            <a href="laptop.html">Laptop</a>
+            <a href="camera.html">Camera</a>
+            <a href="cellphone.html">Cellphone</a>
+            <a href="watch.html">Watch</a>
+        </nav>
+
+        <!-- Icons -->
+        <div class="icons">
+            <a href="addtocart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <!-- Image Section -->
+        <div class="column">
+            <img src="image/disc.png" alt="Disc Image 1">
+        </div>
+        <!-- Carousel Section -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="img-container">
+                    <img src="image/T.png" alt="Image 1">
+                </div>
+                <div class="img-container">
+                    <img src="image/A.png" alt="Image 2">
+                </div>
+                <div class="img-container">
+                    <img src="image/C.png" alt="Image 3">
+                </div>
+                <div class="img-container">
+                    <img src="image/S.png" alt="Image 4">
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+    <!-- Features Section -->
+    <div class="features">
+        <!-- Feature 1 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/5637/5637217.png" alt="Free Shipping">
+            <h3>Free Shipping</h3>
+            <p>On All Orders Over $599</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/7491/7491734.png" alt="Easy Returns">
+            <h3>Easy Returns</h3>
+            <p>30 Day Returns Policy</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/4575/4575124.png" alt="Secure Payment">
+            <h3>Secure Payment</h3>
+            <p>100% Secure Guarantee</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="Special Support">
+
+            <h3>Special Support</h3>
+            <p>24/7 Dedicated Support</p>
+        </div>
+    </div>
+<!-- Featured Products -->
+<div class="categoriespage">
+    <h2 class="title">Products Categories</h2>
+    <div class="small-container">
+        <div class="rows">
+            <div class="col-4">
+                <a href="watch.html">
+                    <img src="image/1.png" alt="Category 1">
+                    <h4>Watches</h4>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="cellphone.html">
+                    <img src="image/2.png" alt="Category 2">
+                    <h4>Phones</h4>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="products.html">
+                    <img src="image/3.png" alt="Category 3">
+                    <h4>Desktops</h4>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+     <div class="categoriespage">
+        <div class="small-container">
+            <div class="rows">
+                <div class="col-4">
+                    <a href="camera.html">
+                        <img src="image/cam.png" alt="Category 1">
+                        <h4>Cameras</h4>
+                        <div class="ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="laptop.html">
+                        <img src="image/PC.png" alt="Category 2">
+                        <h4>Laptops</h4>
+                        <div class="ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="products.html">
+                        <img src="image/cp.png" alt="Category 3">
+                        <h4>All Products</h4>
+                        <div class="ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offer">
+    <h2 class="title">Exclusive Sales</h2>
+    
+<div class="offer"></div>
+    <div class="small-container2">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-2">
+                <img src="image/PC.png" class="offer-img" alt="Golden iPad">
+            </div>
+
+            <!-- Text column -->
+            <div class="col-2 text-section">
+                <p class="exclusive-text">Exclusively Available on Nexa</p>
+                <h1 class="product-title"> Apple iMac M3 </h1>
+                <p class="product-description">
+                    Experience the future of computing with the Apple iMac M3, featuring Apple's groundbreaking M3 chip for unparalleled speed and performance. With its sleek, minimalist design, 4.5K Retina display, and enhanced graphics, this iMac is perfect for creative professionals and multitaskers. Enjoy seamless integration with other Apple devices and a stunning desktop experience tailored for productivity and entertainment.
+                </p>
+                <a href="imac.html" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offer"></div>
+    <div class="small-container2">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-2">
+                <img src="image/cp.png" class="offer-img" alt="Golden iPad">
+            </div>
+
+            <!-- Text column -->
+            <div class="col-2 text-section">
+                <p class="exclusive-text">Exclusively Available on Nexa</p>
+                <h1 class="product-title">Samsung New Galaxy Z</h1>
+                <p class="product-description">
+                    Revolutionize your mobile experience with the Samsung New Galaxy Z, the latest foldable smartphone combining innovation with style. Boasting a vibrant AMOLED foldable display, next-gen processing power, and an ultra-durable hinge, this phone is perfect for tech enthusiasts who demand versatility. Capture every moment with its advanced camera system, enjoy multitasking like never before.</p>
+                    <a href="samsung.html" class="btn">Buy Now &#8594;</a>   
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offer"></div>
+    <div class="small-container2">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-2">
+                <img src="image/watch.png" class="offer-img" alt="Golden iPad">
+            </div>
+
+            <!-- Text column -->
+            <div class="col-2 text-section">
+                <p class="exclusive-text">Exclusively Available on Nexa</p>
+                <h1 class="product-title">Virtuoso Precision Centrio</h1>
+                <p class="product-description">
+                    Achieve perfection with the Virtuoso Precision Centrio, a premium kitchen gadget engineered for culinary enthusiasts. Combining innovative technology with a sleek, modern design, it offers precision cooking, smart controls, and versatile functionality for effortless meal preparation. Whether you’re baking, frying, or steaming, the Centrio ensures restaurant-quality results with every use, making it a must-have for your kitchen.</p>
+                    <a href="vir.html" class="btn">Buy Now &#8594;</a>   
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offer"></div>
+    <div class="small-container2">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-2">
+                <img src="image/cam.png" class="offer-img" alt="Golden iPad">
+            </div>
+
+            <!-- Text column -->
+            <div class="col-2 text-section">
+                <p class="exclusive-text">Exclusively Available on Nexa</p>
+                <h1 class="product-title">Canon EOS 7OD</h1>
+                <p class="product-description">
+                    Capture life’s moments with the Canon EOS 70D, a versatile DSLR camera designed for photographers and videographers alike. Featuring a 20.2MP CMOS sensor, Dual Pixel Autofocus, and a high-performance DIGIC 5+ image processor, this camera delivers stunning image quality and smooth, professional-grade video recording. With built-in Wi-Fi, intuitive controls, and a durable design, it’s perfect for both beginners and enthusiasts looking to elevate their craft.</p>
+                    <a href="canon.html" class="btn">Buy Now &#8594;</a>   
+            </div>
+        </div>
+    </div>
+</div>
+<div class="categoriespage"></div>
+    <h2 class="title">Feautured Products</h2>
+    <div class="small-container">
+        <div class="rows">
+            <div class="col-4">
+                <a href="vir.html">
+                    <img src="image/1.png" alt="Category 1">
+                    <h4>Virtuoso Precision</h4>
+                    <p>₱1769.00</p>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="iphone15.html">
+                    <img src="image/2.png" alt="Category 2">
+                    <h4>Iphone 15</h4>
+                    <p>₱10269.00</p>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="set.html">
+                    <img src="image/3.png" alt="Category 3">
+                    <h4>Desktop Set</h4>
+                    <p>₱80269.00</p>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Our Team-->
+<div class="offer"></div>
+    <div class="small-container2">
+        <div class="row">
+            <!-- Image column -->
+            <div class="col-2">
+                <img src="testimonal/Angeni.png" class="offer-img" alt="Golden iPad">
+            </div>
+
+            <!-- Text column -->
+            <div class="col-2 text-section">
+                <p class="exclusive-text">Nexa Developers and Designers</p>
+                <h1 class="product-title">About Us</h1>
+                <p class="product-description">
+                    Welcome to Nexa, an innovative e-commerce platform developed by BSIT students from 1B at the University of Cebu Pardo and Talisay. As passionate developers, we aim to create a seamless online shopping experience that connects users with high-quality products and services. Our commitment to technology and user satisfaction drives us to deliver cutting-edge solutions for modern e-commerce needs.
+
+
+                </p>
+                <a href="#" class="btn">Learn More! &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Testimonial Section -->
+<div class="Testimonal">
+    <h2 class="title">Service Ratings</h2>
+    <div class="small-container1">
+        <div class="row1">
+            <!-- Testimonial 1 -->
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p1>
+                    Hell yeah!
+                </p1>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="testimonal/Ellah.png" alt="Ellah Lorin">
+                <h8>Ellah Lorin</h8>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p1>
+                    I'm speechless....
+                </p1>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="testimonal/Naya.png" alt="Naya Chantanell">
+                <h8>Naya Chantanell</h8>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p1>
+                    Great Serivce!
+                </p1>
+                <div class="ratings1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <img src="testimonal/Ange.png" alt="Angelica Mae">
+                <h8>Angelica Mae</h8>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="newsletter">
+    <div class="container">
+        <h2 class="newsletter-title">Subscribe to Nexa</h2>
+        <p class="newsletter-description">
+            Enter your email below to be the first to know about new collections and product launches.
+        </p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+            <button type="submit" class="newsletter-button">Subscribe &rarr;</button>
+        </form>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="container1">
+        <div class="footer-row" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+            <!-- Column 1: Logo and Purpose -->
+            <div class="footer-col-1">
+                <div class="footer-logo">
+                    <h3>Nexa</h3>
+                </div>
+                <p>Our Purpose Is To Sustainably Make The Pleasure and Benefits of Technology Accessible to the Many.</p>
+            </div>
+            <!-- Column 2: Download App -->
+            <div class="footer-col-2">
+                <h3>Download Our App</h3>
+                <p>Download our App for Android and iOS mobile phones.</p>
+            </div>
+            <!-- Column 3: Useful Links -->
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="meetourteam.html">Meet the Team</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Join Affiliate</a></li>
+                </ul>
+            </div>
+            <!-- Column 4: Follow Us -->
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61570317974069">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/nexa_phil/profilecard/?igsh=MTBoenJrdmFqaDB0eg%3D%3D&fbclid=IwY2xjawHOqUVleHRuA2FlbQIxMAABHcfLWdEfe3iRsOivdqvC9T8C6P51SYQn7MNDCUvWhLHa3XKPi9nqJK7Prw_aem_cQd0N8U7bZbV6Lz9OmUntQ">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@nexa87?_t=8sHA73cashm&_r=1&fbclid=IwY2xjawHOqUhleHRuA2FlbQIxMAABHcfLWdEfe3iRsOivdqvC9T8C6P51SYQn7MNDCUvWhLHa3XKPi9nqJK7Prw_aem_cQd0N8U7bZbV6Lz9OmUntQ">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
